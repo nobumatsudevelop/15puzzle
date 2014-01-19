@@ -19,7 +19,11 @@
 //ラベルの作成
 - (UILabel*)makeLabel:(CGPoint)pos text:(NSString*)text font:(UIFont*)font {
     UILabel* label=[[UILabel alloc] init];
+#ifdef IS_OS_7_OR_LATER
     CGSize size=[text sizeWithAttributes:@{NSFontAttributeName:font}];
+#else
+    CGSize size=[text sizeWithFont:font];
+#endif
     CGRect rect=CGRectMake(pos.x, pos.y, size.width, size.height);
     
     [label setText:text];
@@ -32,7 +36,11 @@
 //文字列のサイズにラベルを合わせる
 - (UILabel*)resizeLabel:(UILabel*)label {
     CGRect frame=label.frame;
+#ifdef IS_OS_7_OR_LATER
     frame.size=[label.text sizeWithAttributes:@{NSFontAttributeName:[label font]}];
+#else
+    frame.size=[label.text sizeWithFont:[label font]];
+#endif
     [label setFrame:frame];
     
     return label;
