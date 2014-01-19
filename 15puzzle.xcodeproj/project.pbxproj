@@ -382,6 +382,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "15puzzle/15puzzle-Prefix.pch";
 				INFOPLIST_FILE = "15puzzle/15puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "15puzzle/15puzzle-Prefix.pch";
 				INFOPLIST_FILE = "15puzzle/15puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +463,7 @@
 				1803965E188B5402006F43B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1803965F188B5402006F43B7 /* Build configuration list for PBXNativeTarget "15puzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +472,7 @@
 				18039661188B5402006F43B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
